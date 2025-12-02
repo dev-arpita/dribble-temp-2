@@ -7,17 +7,19 @@
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
     <title>Idea lab</title>
   </head>
-  <body class="h-screen ">
+  <body class="h-screen relative">
+    <img src="circle1.svg" alt="" class="w-[300px] md:w-[400px] opacity-5 top-[-0px] left-[-100px] absolute md:top-[-50px] md:left-[-150px] -z-10"/>
+    <img src="circle1.svg" alt="" class="md:w-[400px] opacity-5 absolute top-[-50px] right-[150px] md:top-[-50px] md:right-[-150px] -z-10"/>
     <header class="bg-indigo-50">
         <nav class="text-indigo-700">
             <div class="flex justify-between items-center">
                 <div class="p-4 font font-bold uppercase font-mono">Idea Lab</div>
-                <ul class="flex gap-4 items-center mr-4">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Protfoilio</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact us</a></li>
+                <ul class="hidden sm:flex gap-4 items-center mr-4 hover:cursor-pointer ">
+                    <li><a class="hover:text-indigo-900 hover:font-semibold" href="">About</a></li>
+                    <li><a class="hover:text-indigo-900 hover:font-semibold" href="">Services</a></li>
+                    <li><a class="hover:text-indigo-900 hover:font-semibold" href="">Protfoilio</a></li>
+                    <li><a class="hover:text-indigo-900 hover:font-semibold" href="">Blog</a></li>
+                    <li><a class="hover:text-indigo-900 hover:font-semibold" href="">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,8 +46,8 @@
        
             <div class="flex relative items-center">
                 <input type="search" class="border border-gray-300 rounded-full px-3 md:px-5 p-1 text-xs md:text-base md:py-2 shadow-sm" placeholder="Search here..."/>
-                <div class="flex items-center bg-indigo-500 text-white absolute right-0 rounded-r-3xl p-1.5">
-                    <span class="fa-solid fa-magnifying-glass text-sm md:text-base md:py-2 pl-2.5 md:pl-4 pr-2 md:pr-3 text-md"></span>
+                <div class="flex items-center bg-indigo-500 text-white absolute right-0 rounded-r-3xl p-1.5 hover:cursor-pointer hover:bg-indigo-600">
+                    <span class="fa-solid fa-magnifying-glass text-sm md:text-base md:py-2 pl-2.5 md:pl-4 pr-2 md:pr-3 text-md mr-5"></span>
                 </div>
             </div>
         </div>
@@ -151,7 +153,7 @@
                         <article class="cursor-pointer">
                             <div class="flex gap-4 my-4">
                                 <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" class="w-1/2 object-cover rounded"/>
+                                alt="" class="w-1/3 object-cover rounded"/>
                                 <div class="flex flex-col gap-2">
                                     <h3 class="font-semibold text-sm cursor-pointer hover:underline"><a href="#" >5 Essential tips for designing and memorable brand logo</a></h3>
                                     <span class="text-xs text-gray-500">by Jhon Smith</span>
@@ -159,15 +161,15 @@
                             </div>
                             <div class="flex gap-4 my-4">
                                 <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" class="w-1/2 object-cover rounded"/>
+                                alt="" class="w-1/3 object-cover rounded"/>
                                 <div class="flex flex-col gap-2">
                                     <h3 class="font-semibold text-sm cursor-pointer hover:underline"><a href="#">The do's and dont's of social media marketing</a></h3>
                                     <span class="text-xs text-gray-500">by Andrew Joe </span>
                                 </div>
                             </div>
                     </div>
-                    <div class="">
-                        <h2 class="font-bold text-2xl py-4 text-lg md:text-2xl uppercase">Popular Tags</h2>
+                    <div class="pb-8">
+                        <h2 class="font-bold text-2xl py-4 pb-6 text-lg md:text-2xl uppercase">Popular Tags</h2>
                         <div class="flex flex-wrap gap-2">
                             <button class="border border-gray-300 rounded-full px-4 py-2 hover:bg-indigo-500 hover:text-white text-sm">design</button>
                             <button class="border border-gray-300 rounded-full px-4 py-2 hover:bg-indigo-500 hover:text-white text-sm">web development</button>
